@@ -3,10 +3,39 @@ layout: default
 title: 首页
 ---
 
-# 欢迎来到我的博客
+<div style="text-align: center; padding: 40px 0;">
+  <h1 style="font-size: 3em; margin-bottom: 20px;">👋 欢迎来到我的博客</h1>
+  <p style="font-size: 1.3em; color: #666; margin-bottom: 40px;">记录学习与生活的点点滴滴</p>
+</div>
 
-## 最新文章
+<div style="background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); padding: 30px; border-radius: 15px; margin-bottom: 40px;">
+  <h2 style="color: #11998e; margin-top: 0;">📚 最新文章</h2>
+  
+  {% if site.posts.size > 0 %}
+    <div style="display: grid; gap: 20px;">
+      {% for post in site.posts %}
+        <div style="background: white; padding: 25px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease;">
+          <h3 style="margin-top: 0; margin-bottom: 10px;">
+            <a href="{{ post.url }}" style="color: #2c3e50; text-decoration: none; border-bottom: none;">{{ post.title }}</a>
+          </h3>
+          <div style="color: #999; font-size: 0.9em; margin-bottom: 10px;">
+            📅 {{ post.date | date: "%Y年%m月%d日" }}
+            {% if post.categories %}
+              | 🏷️ {{ post.categories | join: ", " }}
+            {% endif %}
+          </div>
+          {% if post.excerpt %}
+            <p style="color: #666; line-height: 1.6;">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+          {% endif %}
+          <a href="{{ post.url }}" style="color: #11998e; font-weight: 600; text-decoration: none;">阅读全文 →</a>
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p style="text-align: center; color: #999; padding: 40px;">暂无文章,敬请期待...</p>
+  {% endif %}
+</div>
 
-{% for post in site.posts %}
-  * [{{ post.title }}]({{ post.url }}) - {{ post.date | date: "%Y-%m-%d" }}
-{% endfor %}
+<div style="text-align: center; padding: 20px; color: #999;">
+  <p>✨ 持续更新中...</p>
+</div>

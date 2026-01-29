@@ -1,0 +1,80 @@
+---
+layout: default
+---
+
+<article style="max-width: 900px; margin: 0 auto;">
+  <header style="text-align: center; margin-bottom: 40px; padding-bottom: 30px; border-bottom: 3px solid #11998e;">
+    <h1 style="font-size: 2.5em; margin-bottom: 15px; color: #11998e;">{{ page.title }}</h1>
+    
+    <div style="color: #999; font-size: 1em;">
+      <span style="margin-right: 20px;">📅 {{ page.date | date: "%Y年%m月%d日" }}</span>
+      {% if page.author %}
+        <span style="margin-right: 20px;">✍️ {{ page.author }}</span>
+      {% endif %}
+      {% if page.categories %}
+        <span>🏷️ {{ page.categories | join: ", " }}</span>
+      {% endif %}
+    </div>
+  </header>
+  
+  <div style="font-size: 1.1em; line-height: 1.9; color: #444;">
+    {{ content }}
+  </div>
+  
+  <footer style="margin-top: 60px; padding-top: 30px; border-top: 2px solid #e9ecef;">
+    <div style="text-align: center;">
+      <a href="{{ site.baseurl }}/" style="display: inline-block; padding: 12px 30px; background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); color: white; border-radius: 25px; text-decoration: none; font-weight: 600; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+        ← 返回首页
+      </a>
+    </div>
+    
+    {% if page.tags %}
+    <div style="margin-top: 30px; text-align: center;">
+      <p style="color: #999; margin-bottom: 10px;">标签:</p>
+      {% for tag in page.tags %}
+        <span style="display: inline-block; background: #f0f0f0; padding: 5px 15px; border-radius: 15px; margin: 5px; font-size: 0.9em; color: #11998e;">{{ tag }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </footer>
+</article>
+
+<style>
+  article h1 {
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+    color: #2c3e50;
+  }
+  
+  article h2 {
+    margin-top: 1.3em;
+    margin-bottom: 0.7em;
+    color: #11998e;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.3em;
+  }
+  
+  article h3 {
+    margin-top: 1.2em;
+    margin-bottom: 0.6em;
+    color: #0d7377;
+  }
+  
+  article p {
+    margin-bottom: 1.2em;
+  }
+  
+  article ul, article ol {
+    margin-bottom: 1.2em;
+    padding-left: 30px;
+  }
+  
+  article li {
+    margin-bottom: 0.5em;
+  }
+  
+  article a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(17, 153, 142, 0.3);
+  }
+</style>
