@@ -9,7 +9,7 @@ title: 首页
 </div>
 
 <div style="background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); padding: 30px; border-radius: 15px; margin-bottom: 40px;">
-  <h2 style="color: #11998e; margin-top: 0;">📚 最新文章</h2>
+  <h2 style="color: #56ab91; margin-top: 0;">📚 最新文章</h2>
   
   {% if site.posts.size > 0 %}
     <div style="display: grid; gap: 20px;">
@@ -27,7 +27,7 @@ title: 首页
           {% if post.excerpt %}
             <p style="color: #666; line-height: 1.6;">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
           {% endif %}
-          <a href="{{ post.url }}" style="color: #11998e; font-weight: 600; text-decoration: none;">阅读全文 →</a>
+          <a href="{{ post.url }}" style="color: #56ab91; font-weight: 600; text-decoration: none;">阅读全文 →</a>
         </div>
       {% endfor %}
     </div>
