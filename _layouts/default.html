@@ -44,21 +44,23 @@
     }
     
     header {
-      background: linear-gradient(135deg, #a8e6cf 0%, #56ab91 100%);
-      color: white;
+      background: white;
+      color: #2c3e50;
       padding: 40px;
       text-align: center;
+      border-bottom: 3px solid #a8e6cf;
     }
     
     header h1 {
       font-size: 2.5em;
       margin-bottom: 10px;
       font-weight: 700;
+      color: #56ab91;
     }
     
     header p {
       font-size: 1.1em;
-      opacity: 0.9;
+      color: #666;
     }
     
     nav {
@@ -234,6 +236,11 @@
 </head>
 <body>
   <div class="container">
+    <header>
+      <h1>{{ site.title }}</h1>
+      <p>{{ site.description }}</p>
+    </header>
+    
     <nav>
       <a href="{{ site.baseurl }}/">🏠 首页</a>
       <a href="{{ site.baseurl }}/about">👤 关于</a>
