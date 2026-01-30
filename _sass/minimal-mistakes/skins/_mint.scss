@@ -1,0 +1,47 @@
+/* ==========================================================================
+   Mint skin
+   ========================================================================== */
+
+/* Colors */
+$background-color: #f8fffe !default;
+$text-color: #1a3a2e !default;
+$muted-text-color: #40514e !default;
+$primary-color: #2ecc71 !default;
+$border-color: mix(#fff, #2ecc71, 75%) !default;
+$footer-background-color: #1a3a2e !default;
+$link-color: #27ae60 !default;
+$link-color-hover: mix(#fff, #27ae60, 25%) !default;
+$link-color-visited: mix(#000, #27ae60, 25%) !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: $primary-color !default;
+$navicon-link-color-hover: mix(#fff, $text-color, 80%) !default;
+
+/* notices */
+$notice-background-color: mix(#fff, $primary-color, 90%) !default;
+$code-background-color: mix(#fff, $primary-color, 95%) !default;
+$code-background-color-dark: mix(#000, $primary-color, 90%) !default;
+$form-background-color: mix(#fff, $primary-color, 95%) !default;
+
+.page__footer {
+  color: #fff !important;
+}
+
+.page__footer-follow .social-icons .svg-inline--fa {
+  color: inherit;
+}
+
+.page__footer-copyright {
+  color: #fff !important;
+}
+
+.greedy-nav a {
+  color: $masthead-link-color;
+}
+
+.greedy-nav a:hover {
+  color: $masthead-link-color-hover;
+}
+
+.greedy-nav .visible-links a:before {
+  background: $primary-color;
+}
