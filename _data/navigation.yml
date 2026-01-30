@@ -6,7 +6,5 @@ main:
     url: /about/
   - title: "归档"
     url: /year-archive/
-  - title: "分类"
-    url: /categories/
   - title: "标签"
     url: /tags/

@@ -1,9 +1,9 @@
 # Site Settings
-title: 我的博客
-title_separator: "-"
-subtitle: "记录学习与生活"
+title: Rabbity's Blog
+title_separator: "|"
+subtitle: "技术笔记与成长记录"
 name: "Rabbity"
-description: "记录学习与生活 | 技术分享 | 个人成长"
+description: "技术分享 | 学习笔记 | 个人成长"
 url: "https://rabbity0114.github.io"
 baseurl: ""
 repository: "rabbity0114/rabbity0114.github.io"
