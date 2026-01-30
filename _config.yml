@@ -31,6 +31,10 @@ footer:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/rabbity0114"
 
+# Site copyright
+copyright: "© 2026 我的博客"
+copyright_url: "https://rabbity0114.github.io"
+
 # Reading Files
 include:
   - .htaccess

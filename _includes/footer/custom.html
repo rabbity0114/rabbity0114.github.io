@@ -1,0 +1,10 @@
+<!-- Custom footer content -->
+<script>
+  // Update copyright year to 2026
+  document.addEventListener('DOMContentLoaded', function() {
+    var copyrightElements = document.querySelectorAll('.page__footer-copyright');
+    copyrightElements.forEach(function(element) {
+      element.innerHTML = element.innerHTML.replace(/© \d{4}/, '© 2026');
+    });
+  });
+</script>
