@@ -10,7 +10,7 @@ repository: "rabbity0114/rabbity0114.github.io"
 teaser: # path of fallback teaser image
 logo: # path of logo image to display in the masthead
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
-breadcrumbs: true
+breadcrumbs: false
 
 # Site Author
 author:
