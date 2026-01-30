@@ -1,3 +1,12 @@
+---
+layout: single
+title: "NVIDIA vGPU方案解析"
+date: 2026-01-29 16:00:00 +0800
+categories: 技术 虚拟化
+tags: [GPU, NVIDIA, vGPU, VFIO]
+excerpt: "NVIDIA vGPU驱动实现了与VFIO框架的核心交互，是连接NVIDIA专有GPU驱动与Linux标准VFIO/MDEV虚拟化框架的适配器角色。"
+---
+
 # NVIDIA vGPU方案解析
 
 ## NVIDIA vGPU驱动剖析
@@ -8,7 +17,7 @@
 
 前端的接口是`nvidia_vgpu_vfio`，后端接口是`RM(Resource Manager)`核心资源管理器。两者之间的通信桥梁是一套定义清晰的操作函数集`(Operations)`。
 
-![回调函数机制](/Users/qingjiao/rabbity0114.github.io/assets/image-20260130105303922.png)
+![回调函数机制](/assets/image-20260130105303922.png)
 
 
 
