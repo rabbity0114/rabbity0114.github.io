@@ -16,8 +16,8 @@ breadcrumbs: true
 author:
   name: "Rabbity"
   avatar: # path of avatar image
-  bio: "热爱技术的开发者 💻"
-  location: "🇨🇳 China"
+  bio: "热爱技术的开发者"
+  location: "China"
   email: # your email
   links:
     - label: "GitHub"

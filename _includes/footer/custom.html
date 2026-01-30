@@ -4,7 +4,10 @@
   document.addEventListener('DOMContentLoaded', function() {
     var copyrightElements = document.querySelectorAll('.page__footer-copyright');
     copyrightElements.forEach(function(element) {
-      element.innerHTML = element.innerHTML.replace(/© \d{4} 我的博客/, '© 2026 Rabbity\'s Blog');
+      // Replace any year (2024, 2025, etc.) with 2026
+      element.innerHTML = element.innerHTML.replace(/© \d{4}/, '© 2026');
+      // Also replace the site name if needed
+      element.innerHTML = element.innerHTML.replace(/我的博客/, 'Rabbity\'s Blog');
     });
   });
 </script>

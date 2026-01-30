@@ -2,7 +2,8 @@
 layout: single
 title: 关于我
 permalink: /about/
-author_profile: true
+author_profile: false
+classes: wide
 ---
 
 ## 👋 你好
