@@ -1,0 +1,13 @@
+/* Hide the original copyright text and replace with 2026 */
+.page__footer-copyright {
+    font-size: 0;
+}
+
+.page__footer-copyright::before {
+    content: "© 2026 Rabbity's Blog. Powered by ";
+    font-size: 0.75rem;
+}
+
+.page__footer-copyright a {
+    font-size: 0.75rem;
+}
